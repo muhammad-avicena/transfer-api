@@ -65,11 +65,11 @@ Interested to have collaboration ? Find me on:
 | **Register User**                   | `POST`      | [/api/v1/auth/register](https://transfer-api.avicena.dev/) | Request Body: `username: string, password: string, role: string`                                                    |
 | **List All User**                   | `GET`       | [/api/v1/users](https://transfer-api.avicena.dev/)         |
 | **List All Transfer**               | `GET`       | [/api/v1/transfers](https://transfer-api.avicena.dev/)     |
-| **List Transfer by ID**             | `GET`       | [/api/v1/transfer/:id](https://transfer-api.avicena.dev/)  | Request Params: `id: number`                                                                                        |
-| **Create Transfer**                 | `POST`      | [/api/v1/transfer](https://transfer-api.avicena.dev/)      | Request Body: `bank: string, amount: number, toUser: string, desc: string`                                          |
-| **Update Transfer Status by ID**    | `PATCH`     | [/api/v1/transfer/:id](https://transfer-api.avicena.dev/)  | Request Body: `status: string`                                                                                      |
-| **Find History Transfer by querry** | `GET`       | [/api/v1/transfer](https://transfer-api.avicena.dev/)      | Request Body: `startDate: string, endDate: string, status: string, status: string` -> could find by multiple status |
-| **Delete Transfer by ID**           | `DELETE`    | [/api/v1/transfer/:id](https://transfer-api.avicena.dev/)  | Request Params: `id: number`                                                                                        |
+| **List Transfer by ID**             | `GET`       | [/api/v1/transfers/:id](https://transfer-api.avicena.dev/)  | Request Params: `id: number`                                                                                        |
+| **Create Transfer**                 | `POST`      | [/api/v1/transfers](https://transfer-api.avicena.dev/)      | Request Body: `bank: string, amount: number, toUser: string, desc: string`                                          |
+| **Update Transfer Status by ID**    | `PATCH`     | [/api/v1/transfers/:id](https://transfer-api.avicena.dev/)  | Request Body: `status: string`                                                                                      |
+| **Find History Transfer by querry** | `GET`       | [/api/v1/transfers](https://transfer-api.avicena.dev/)      | Request Query: `startDate: string, endDate: string, status: string, status: string` -> could find by multiple status |
+| **Delete Transfer by ID**           | `DELETE`    | [/api/v1/transfers/:id](https://transfer-api.avicena.dev/)  | Request Params: `id: number`                                                                                        |
 
 ## Components
 
